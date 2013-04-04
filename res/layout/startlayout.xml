@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal">
+    
+    <include android:id="@+id/startadlayout" layout="@layout/adlayout"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" 
+		android:layout_weight="1">
+	    
+	    <TextView
+	        android:id="@+id/startplayertext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="25dp"
+	        android:textColor="#ffffff"
+	        android:typeface="sans"
+	        android:textSize="20dp"
+	        android:gravity="center" />
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal" >
+	        
+	        <include
+	            android:id="@+id/startcarddn"
+	            layout="@layout/cardlayout" />
+	        
+	        <include
+	            android:id="@+id/startcard"
+	            layout="@layout/startcardlayout" />
+	        	        
+    	</LinearLayout>
+
+	</LinearLayout>
+    
+	<include android:id="@+id/startbuttonlayout" layout="@layout/buttonslayout"/>
+        
+</LinearLayout>
